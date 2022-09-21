@@ -11,3 +11,22 @@ Lexical Enviroment: ambiente léxico é um lugar onde variáveis e funções viv
 Context de execução: contém seu código, o código em exececução.
 
 Ambientes lexicais estamos falando sobre o contexto de execução, estamos falando de analisadores de sintaxe. 
+
+Name/Value pair(par valor): é umnome que mapeia para um valor único.Ex:  Address='100 Main Sr.'; (este é um par nome valor)
+Objeto: é uma coleção de pares  nome/valor;
+Endereço é uma coleção de outros nomes e valore;
+Address:
+  {
+  Street:'Main',
+  Number:100
+       Apartment:{
+       Floor:3;
+       Number:301
+        }
+  }
+
+Execution Context (Global)
+Sempre que um códifo é executado em JS , é ejecutado dentro do contexto de execução,
+- global, estamos falando sobre a coisa que é acessível em todos os lugares para tudo em seu código, é global.
+- O mecanisco JS está criando essas duas coisas para você" Global Object e 'this'" sempre que seu código é executado e embrulhado dentro de um contexto de execução. Elas são criadas pelo o motos do JS.
+
