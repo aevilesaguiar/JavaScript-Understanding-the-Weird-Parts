@@ -1,0 +1,6 @@
+//usar função anônima
+(function(){
+    var a =1
+    console.log(a);
+})();
+
